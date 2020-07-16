@@ -1,6 +1,7 @@
 # Ubuntu Repo Manager for Nexus
 
-The current version of Nexus does not support multiple debian distributions in a single repository. This module creates proxy repos for the default used Ubuntu repositiories.
+The current version of Nexus does not support multiple debian distributions in a  
+ single repository. This module creates proxy repos for the default used Ubuntu repositiories.
 
 * base repo (ie bionic)
 * updates
@@ -11,7 +12,9 @@ For an example of this module in use, see [ISS Apt Nexus Terraform](https://gith
 
 ## Requirements
 
-The nexus provider must be installed in your terraform plugins path. Download it from [datadrivers/terraform-provider-nexus](https://github.com/datadrivers/terraform-provider-nexus) and extract it to you `~/terraform.d/plugins` directory.
+The nexus provider must be installed in your terraform plugins path.  
+ Download it from [datadrivers/terraform-provider-nexus](https://github.com/datadrivers/terraform-provider-nexus)  
+ and extract it to you `~/terraform.d/plugins` directory.
 
 ## Providers
 
@@ -35,3 +38,4 @@ The nexus provider must be installed in your terraform plugins path. Download it
 | nexus\_repo\_names | The list of nexus repository names that were created |
 | repo\_list | The list of repo codenames that were created |
 | repo\_urls | A map of the repo codename to the url. [bionic-updates, https://yoururl/repositories/ubuntu-bionic-updates] |
+
