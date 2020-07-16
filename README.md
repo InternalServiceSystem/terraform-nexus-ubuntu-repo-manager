@@ -13,12 +13,18 @@ For an example of this module in use, see [ISS Apt Nexus Terraform](https://gith
 
 The nexus provider must be installed in your terraform plugins path. Download it from [datadrivers/terraform-provider-nexus](https://github.com/datadrivers/terraform-provider-nexus) and extract it to you `~/terraform.d/plugins` directory.
 
+## Providers
+
+| Name | Version |
+|------|---------|
+| nexus | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| codename | The Ubuntu Distribution's CodeName. | `string` | `"bionic"` | no |
 | nexus\_url | The URL of the Nexus server. | `string` | n/a | yes |
+| codename | The Ubuntu Distribution's CodeName. | `string` | `"bionic"` | no |
 | remote\_url | The URL of the Ubuntu Repository to target. | `string` | `"http://us.archive.ubuntu.com/ubuntu/"` | no |
 | repos | The Ubuntu Distribution's repos to add. | `list(string)` | <pre>[<br>  "updates",<br>  "security",<br>  "backports"<br>]</pre> | no |
 
