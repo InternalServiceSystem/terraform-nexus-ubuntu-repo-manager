@@ -1,0 +1,11 @@
+formatter: markdown table
+header-from: .header.md
+
+sections:
+  hide:
+    - requirements
+
+sort:
+  enabled: true
+  by:
+    - required
