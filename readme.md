@@ -1,0 +1,14 @@
+# Ubuntu Repo Manager for Nexus
+
+The current version of Nexus does not support multiple debian distributions in a single repository. This module creates proxy repos for the default used Ubuntu repositiories.
+
+* base repo (ie bionic)
+* updates
+* security
+* backports
+
+For an example of this module in use, see [ISS Apt Nexus Terraform](https://github.com/InternalServiceSystem/iss-apt-nexus-terraform)
+
+## Requirements
+
+The nexus provider must be installed in your terraform plugins path. Download it from [datadrivers/terraform-provider-nexus](https://github.com/datadrivers/terraform-provider-nexus) and extract it to you `~/terraform.d/plugins` directory.
